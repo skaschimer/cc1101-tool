@@ -955,7 +955,7 @@ static void exec(char *cmdline)
                bigrecordingbufferpos = 0;
                // flush buffer for recording 
                for (int i = 0; i < RECORDINGBUFFERSIZE; i++)
-                    { bigrecordingbuffer[RECORDINGBUFFERSIZE] = 0; };
+                    { bigrecordingbuffer[i] = 0; };
                recordingmode = 1;
                jammingmode = 0;
                receivingmode = 0;
