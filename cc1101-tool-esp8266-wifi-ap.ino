@@ -19,6 +19,7 @@
 #include <ELECHOUSE_CC1101_SRC_DRV.h>
 #include <EEPROM.h>
 #include <ESP8266WiFi.h>
+#include <SPI.h>
 
 #define CCBUFFERSIZE 64
 #define RECORDINGBUFFERSIZE 4096   // Buffer for recording the frames
@@ -1612,3 +1613,4 @@ void loop() {
    }; // end of "tcpclient" if
  
 }  // end of main LOOP
+
