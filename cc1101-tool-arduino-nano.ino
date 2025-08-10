@@ -19,6 +19,7 @@
 #include <ELECHOUSE_CC1101_SRC_DRV.h>
 #include <avr/pgmspace.h>
 #include <EEPROM.h>
+#include <SPI.h>
 
 #define CCBUFFERSIZE 64
 #define RECORDINGBUFFERSIZE 1024   // Buffer for recording the frames. ATMEGA328 has only 2048 SRAM storage
@@ -1275,3 +1276,4 @@ void loop() {
       };
  
 }  // end of main LOOP
+
