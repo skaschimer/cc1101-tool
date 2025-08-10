@@ -18,6 +18,7 @@
 
 #include <ELECHOUSE_CC1101_SRC_DRV.h>
 #include <EEPROM.h>
+#include <SPI.h>
 
 #define CCBUFFERSIZE 64
 #define RECORDINGBUFFERSIZE 4096   // Buffer for recording the frames
@@ -1298,3 +1299,4 @@ void loop() {
       };
  
 }  // end of main LOOP
+
