@@ -27,12 +27,12 @@
 #define BUF_LENGTH 128             // Buffer for the incoming command.
 
 // defining PINs for Arduino NANO
-byte sck = 16; // D13
-byte miso = 15; // D12
-byte mosi = 14; // D11
-byte ss = 13; // D10
-byte gdo0 = 9; // D6
-byte gdo2 = 5; // D2
+byte sck = 13; // D13
+byte miso = 12; // D12
+byte mosi = 11; // D11
+byte ss = 10; // D10
+byte gdo0 = 6; // D6
+byte gdo2 = 2; // D2
 
 // position in big recording buffer
 int bigrecordingbufferpos = 0; 
@@ -1276,4 +1276,5 @@ void loop() {
       };
  
 }  // end of main LOOP
+
 
