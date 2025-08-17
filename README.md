@@ -208,17 +208,41 @@ Example for Arduino Nano board - ATTENTION ! I HAVE TESTED THIS BOARD AND IT REQ
 
 // defining PINs for Arduino NANO
 
-byte sck = 16;  // D13 
+byte sck = 13; // D13
 
-byte miso = 15;  // D12
+byte miso = 12; // D12
 
-byte mosi = 14;  // D11
+byte mosi = 11; // D11
 
-byte ss = 13;  // D10
- 
-int gdo0 = 9;  // D6
+byte ss = 10; // D10
 
-int gdo2 = 5;  // D2
+byte gdo0 = 6; // D6
+
+byte gdo2 = 2; // D2
+
+----
+
+Example for Arduino Pro MINI board - ATTENTION ! I HAVE TESTED THIS BOARD AND IT REQUIRES TTL LOGIC COVERTER 5V<->3.3V TXS0108E ESPECIALLY FOR BOARD CC1101 : E07-M1101D, otherwise it does not work
+
+#define RECORDINGBUFFERSIZE 1024   // Buffer for recording the frames
+
+#define EPROMSIZE 1024             // Size of EEPROM in your Arduino chip. 
+
+
+// defining PINs for Arduino PRO MINI
+
+byte sck = 16; // D13
+
+byte miso = 15; // D12
+
+byte mosi = 14; // D11
+
+byte ss = 13; // D10
+
+byte gdo0 = 9; // D6
+
+byte gdo2 = 5; // D2
+
 
 ----
 
